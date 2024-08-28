@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="hockey-type-1-48.png" type="image/x-icon">
+        <title>Hockey Site</title>
+        <!-- font awesome CDN link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <!-- google font cdn link -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Niconne&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+        <!-- Tailwind CSS and DaisyUi cdn link -->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+    
+        <script>
+            tailwind.config = {
+              theme: {
+                extend: {
+                  colors: {
+                    clifford: '#da373d',
+                  },
+                  fontFamily: {
+                    Poppins: 'Poppins'
+                  },
+                }
+              }
+            }
+        </script>
+        <style>
+            .font_manrope{
+                font-family: "Manrope", sans-serif;
+            }
+            .bg-1{
+              background-image: url('Images/2.png');
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-color: rgba(0, 0, 0, 0.518);
+              background-blend-mode: overlay;
+            }
+            .bg-2{
+              background-image: url('Images/3.png');
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-color: rgba(0, 0, 0, 0.518);
+              background-blend-mode: overlay;
+            }
+            .bg-3{
+              background-image: url('Images/4.png');
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-color: rgba(0, 0, 0, 0.518);
+              background-blend-mode: overlay;
+            }
+        </style>
+    </head>
+<body class="font_manrope">
+    <header>
+        <div class="navbar w-[90%] mx-auto mt-5">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Pages</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost  text-3xl font-bold">Hockey<span class="text-[#FF4240] text-4xl">’</span>s</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a href="" class="text-[#FF4240]">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Pages</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contact</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <i class="fa-solid fa-magnifying-glass mr-6"></i>
+              <a class="rounded-lg px-8 py-2 bg-[#FF4240] text-white font-semibold">Get Ticket</a>
+            </div>
+          </div>
+
+          <section>
+            <div class="w-[90%] mx-auto mt-10 relative">
+                <div class="carousel">
+                    <div id="slide1" class="carousel-item relative w-full">
+                      <img
+                        src="Images/1.png"
+                        class="w-full" />
+                      <div class="absolute left-5 right-full bottom-5 flex -translate-y-3/4 transform justify-between gap-4">
+                        <a href="#slide4" class="btn btn-circle bg-black text-white border-none">❮</a>
+                        <a href="#slide2" class="btn btn-circle bg-black text-white border-none">❯</a>
+                      </div>
+                    </div>
+                    <div id="slide2" class="carousel-item relative w-full">
+                      <img
+                        src="Images/1.png"
+                        class="w-full" />
+                        <div class="absolute left-5 right-full bottom-5 flex -translate-y-3/4 transform justify-between gap-4">
+                            <a href="#slide1" class="btn btn-circle bg-black text-white border-none">❮</a>
+                            <a href="#slide3" class="btn btn-circle bg-black text-white border-none">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide3" class="carousel-item relative w-full">
+                      <img
+                        src="Images/1.png"
+                        class="w-full" />
+                        <div class="absolute left-5 right-full bottom-5 flex -translate-y-3/4 transform justify-between gap-4">
+                            <a href="#slide2" class="btn btn-circle bg-black text-white border-none">❮</a>
+                            <a href="#slide4" class="btn btn-circle bg-black text-white border-none">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide4" class="carousel-item relative w-full">
+                      <img
+                        src="Images/1.png"
+                        class="w-full" />
+                        <div class="absolute left-5 right-full bottom-5 flex -translate-y-3/4 transform justify-between gap-4">
+                            <a href="#slide3" class="btn btn-circle bg-black text-white border-none">❮</a>
+                            <a href="#slide1" class="btn btn-circle bg-black text-white border-none">❯</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[500px] h-42 p-8 bg-[#131318] rounded-xl text-white absolute right-10 bottom-10">
+                    <h2 class="text-xl font-[800]">Meet all the heroes from the field</h2>
+                    <p class="text-sm opacity-70 mt-3">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                </div>
+            </div>           
+          </section>          
+    </header>
+    <main>
+      <section class="w-[90%] mx-auto text-center mt-16 mb-10 ">
+        <h1 class="text-2xl font-bold border-t-2 border-dashed pt-16">Professional Hockeys Club</h1>
+        <p class="w-2/4 text-sm mx-auto mt-4 text-gray-600">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+        <div class="grid grid-cols-1 lg:grid-cols-4 mx-auto mt-16 gap-6 border-y-2 border-dashed py-14">
+            <div class="space-y-4">
+                <div class="radial-progress text-[#FF4240] " style="--value:87;" role="progressbar">87%</div>
+                <h2 class="font-bold">Prayer Facility</h2>
+                <p class="text-sm">Amet consectetur. Condimentum dignissim adipiscing .</p>
+            </div>
+            <div class="space-y-4">
+                <div class="radial-progress text-[#49D293]" style="--value:95;" role="progressbar">95%</div>
+                <h2 class="font-bold">Experienced Coach</h2>
+                <p  class="text-sm">Amet consectetur. Condimentum dignissim adipiscing .</p>
+            </div>
+            <div class="space-y-4">
+                <div class="radial-progress text-[#FFB546]" style="--value:90;" role="progressbar">90%</div>
+                <h2 class="font-bold">Senior Player</h2>
+                <p class="text-sm">Amet consectetur. Condimentum dignissim adipiscing .</p>
+            </div>
+            <div class="space-y-4">
+                <div class="radial-progress text-[#4C8DF1]" style="--value:80;" role="progressbar">80%</div>
+                <h2 class="font-bold">Training Ground</h2>
+                <p class="text-sm">Amet consectetur. Condimentum dignissim adipiscing .</p>
+            </div>
+        </div>
+      </section>
+
+      <section class="w-[90%] mx-auto text-center mb-20">
+        <h1 class="text-2xl font-bold">Program Sections</h1>
+        <p class="w-2/4 text-sm mx-auto mt-4 text-gray-600 border-b-2 border-dashed pb-10">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 text-white text-left">
+          <div class="bg-1 rounded-2xl px-10 pb-7 pt-16 space-y-4">
+            <!-- <div class="w-full h-full bg-[#000000a7] absolute top-0 left-0 rounded-2xl "></div> -->
+              <h1 class="font-[800] text-xl">Junior Program</h1>
+              <p class="text-gray-200 text-base">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+              enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+              <button class="bg-[#FF4240] rounded-lg px-5 py-2 border-none text-white">Register Now!</button>    
+          </div>
+          <div class="bg-2 rounded-2xl px-10 pb-7 pt-16 space-y-4">
+            <h1 class="font-[800] text-xl">Teenager Program</h1>
+            <p class="text-gray-200 text-base">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+              enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+              <button class="bg-[#FF4240] rounded-lg px-5 py-2 border-none text-white">Register Now!</button>
+          </div>
+          <div class="col-span-2 bg-3 rounded-2xl px-10 pt-40 lg:h-[400px] space-y-4">
+            <h1 class="font-[800] text-xl">Professional Program</h1>
+            <p class="text-gray-200 text-base w-3/4">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+              enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+              <button class="bg-[#FF4240] rounded-lg px-5 py-2 border-none text-white">Register Now!</button>
+          </div>
+        </div>
+      </section>
+    </main>
+</body>
+</html>
